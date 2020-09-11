@@ -46,8 +46,11 @@ resized_img=uint8(t);
 %truesize
 %Show resized image along with new resolution
 %figure;
-%imtool(resized_img);
+%imshow(resized_img);
 %truesize
+
+%Uncomment this line to see information about the new image.
+%imtool(resized_img);
 
 %Save new image
 imwrite(resized_img,"resized_img.gif");
